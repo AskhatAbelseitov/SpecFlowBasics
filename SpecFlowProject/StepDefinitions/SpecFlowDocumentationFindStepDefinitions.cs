@@ -11,14 +11,7 @@ namespace SpecFlowProject.StepDefinitions
     public class SpecFlowDocumentationFindStepDefinitions
     {
         private IWebDriver driver = new ChromeDriver();
-        private readonly By _acceptCookies = By.XPath("//button[@id='consent-accept']");
-        private readonly By _docsTab = By.XPath("//a[@href='https://docs.specflow.org/en/latest/']");
-        private readonly By _specFlowTab = By.XPath("//div//ul//li//a[@href='https://docs.specflow.org/projects/specflow/en/latest/']");
-        private readonly By _searchField = By.XPath("//div//form[@id='rtd-search-form']");
-        private readonly By _searchFieldInput = By.CssSelector("div input.search__outer__input");
-        private readonly By _searchResultTitle = By.XPath("(//div[@class='search__result__single']//a//h2//span)[1]");
-
-
+       
         [Given("I am on the Main Page")]
         public void OpenTheMainPage()
         {
